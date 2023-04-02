@@ -64,3 +64,6 @@
 	5.Simplifies the complex join-
           It is easy to fetch the data from multiple tables in hibernate framework.
 
+
+
+imporant questions

@@ -1,0 +1,62 @@
+// Convert String in LowerCase
+import java.util.*;
+import java.util.stream.*;
+class Emp
+{
+    private int id;
+    private String name;
+    private long salary;
+    private String designation;
+    public Emp(int id,String name,long salary,String designation)
+    {
+        this.id=id;
+        this.name=name;
+        this.salary=salary;
+        this.designation=designation;
+    }
+    public int getId()
+    {
+        return id;
+    }
+    public void  setId(int id)
+    {
+        this.id=id;
+    }
+    public String getName()
+    {
+        return name;
+    }
+    public void setName(String name)
+    {
+        this.name=name;
+    }
+    public long getSalary()
+    {
+       return salary; 
+    }
+    public void setSalary(long salary)
+    {
+        
+        this.salary=salary;
+    }
+    public String getDesignation()
+    {
+        return designation;
+    }
+    public void setDesignation(String designation)
+    {
+        this.designation=designation;
+    }
+    public static void main(String [] args)
+    {
+        Emp emp1= new Emp(123,"satish",4000,"developer");
+          Emp emp2= new Emp(124,"sapkal",5000,"developer");
+            Emp emp3= new Emp(125,"sapkal",5000,"developer");
+            List<Emp>list= new ArrayList<>();
+            list.add(emp1);
+            list.add(emp2);
+            list.add(emp3);
+           List<Integer>emplyoeeId =list.stream().map(i->i.getId()).collect(Collectors.toList());
+           System.out.println(emplyoeeId );
+    }
+}

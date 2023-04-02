@@ -1,0 +1,14 @@
+// count odd number
+import java.util.*;
+import java.util.stream.*;
+class Test
+{
+    public static void main(String [] args)
+    {
+        List<Integer>list=Arrays.asList(7,9,10,45,32,21,55,67);
+       long list2=list.stream().filter(i->i%2!=0).count();
+       System.out.println(list2);
+       
+
+    }
+}

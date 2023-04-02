@@ -1,0 +1,18 @@
+@FunctionalInterface
+interface Test
+{
+    abstract void set();
+}
+class Best implements Test
+{
+    @Override
+    public void set()
+    {
+        System.out.println("printing something here");
+    }
+    public static void main(String [] args)
+    {
+    Best b= new Best();
+    b.set();
+    }
+}

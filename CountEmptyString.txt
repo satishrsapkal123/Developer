@@ -1,0 +1,13 @@
+// Counting Empty String
+import java.util.*;
+import java.util.stream.*;
+class Test
+{
+    public static void main(String [] args)
+    {
+        List<String>list=Arrays.asList("A","","","D","","F");
+        long list2=list.stream().filter(i->i.isEmpty()).count();
+        System.out.println(list2);
+
+    }
+}

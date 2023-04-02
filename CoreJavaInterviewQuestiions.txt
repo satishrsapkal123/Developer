@@ -1,0 +1,99 @@
+1.What is serialization?
+2.Objects are passed by value or by reference?
+3.Primitive data types are passed by reference or pass by value?
+4.What type of parameter passing does Java support?
+5.Can a top level class be private or protected?
+6.What is the default value of an object reference declared as an instance variable?
+7.What is the difference between declaring a variable and defining avariable?
+8.Which methods of Serializable interface should I implement?
+9.Does Java provide any construct to find out the size of an object?
+10.Why do we need wrapper classes?
+11.What are checked exceptions?
+12.What are runtime exceptions?
+13.What is the difference between error and an exception?
+14.How to create custom exceptions?
+15.If I want an object of my class to be thrown as an exception object, what should I do?
+16.If my class already extends from some other class what should I do if Iwant an instance of my class to be thrown as an exception object
+17.What are the different ways to handle exceptions?
+18.Is it necessary that each try block must be followed by a catch block?
+19.If I write return at the end of the try block, will the finally block still execute?
+20.If I write System.exit(0); at the end of the try block, will the finally block stillexecute?
+21.What is synchronization and why is it important?
+    ANS:- Java supports multiple threading if two or more threaad executed at a same it will caused the program of excecusion to avoid this problem we used Synchronization is the process of allowing threads to execute one after another.
+22.When a thread is created and started, what is its initial state?
+   ANS:-A thread is in the ready state after it has been created and started.
+23.What is the difference between a while statement and a do statement?
+   ANS:-A while statement checks at the beginning of a loop to see whether the next loopiteration should occur.
+      A do statement checks at the end of a loop to see whether the next iteration of a loopshould occur. The do statement will always execute the body of a loop at least once.
+24.What is the difference between static and non-static variables?
+24.How are this() and super() used with constructors?
+   ANS-This() is used to invoked the constructor of same class 
+       Super() is used invoked the superclass constructor
+     Program:-class Test
+{
+    Test()
+    {
+        System.out.println("Animals are 123");
+    }
+}
+class Best extends Test
+{
+  
+    Best()
+    
+    {  
+        super();
+      
+        System.out.println("Happy");
+    }
+    public static void main(String [] args)
+    {
+        Best b= new Best();
+        System.out.println("Inside123");
+    }
+}
+
+
+
+25. How does a try statement determine which catch clause should be used tohandle an exception?
+26.What modifiers are allowed for methods in an Interface?:-public
+27.Is Empty .java file a valid source file?:-yes
+28.Can a .java file contain more than one java classes?:-yes
+29.Is String a primitive data type in Java?:-no
+30.Is main a keyword in Java?:-no
+31.Is next a keyword in Java?:-no
+32.Is delete a keyword in Java?:no
+33.Is exit a keyword in Java?:-no
+34.What happens if you dont initialize an instance variable of any of theprimitive types in Java?:-0 and if boolean:-false
+35.What will be the initial value of an object reference which is defined as aninstance variable?:-null
+36.What are the different scopes for Java variables?
+37.What is the default value of the local variables?
+38.Can a public class MyClass be defined in a source file namedYourClass.java?:-no
+39.Can main() method be declared final?
+    Ans:-Yes, the main() method can be declared final, in addition to being public static.
+40.What is HashMap and Map?
+   Ans:-Map is an Interface and Hashmap is the class that implements Map.
+41.Difference between HashMap and HashTable? :-----need to do
+42.Difference between Vector and ArrayList?
+   Ans:-Vector is synchronized whereas arraylist is not.
+43.Can an application have multiple classes having main() method?
+44.What is the difference between a constructor and a method?
+45.What is the purpose of garbage collection in Java, and when is it used?
+   Ans:-The purpose of garbage collection is to identify and discard objects that are no longer needed by a program so that their resources can be reclaimed and reused.
+46.What is an abstract class?
+   Ans:-Any class with an abstract method is automatically abstract itself,
+47.What is the difference between an Interface and an Abstract class?
+48.Explain different way of using thread?
+   Ans:-The thread could be implemented by using runnable interface or by inheriting from theThread class.
+49.What is static in java?
+50.What is Final in class?
+51.What if the main() method is declared as private?
+52.What if the static modifier is removed from the signature of the main()method?
+53.What if I write static public void instead of public static void?:-compile fine
+54.What if I do not provide the String array as the argument to the method? NoSuchMethod error
+55.What is the first argument of the String array in main() method ?:- empty
+56.If I do not provide any arguments on the command line, then the Stringarray of main() method will be empty or null? :-is empty but not null
+57.What environment variables do I need to set on my machine in order to beable to run Java programs:-ClassPath and Path
+58.Can I have multiple main() methods in the same class?:No
+59.Do I need to import java.lang package any time? Why ?:-by defauld loaded by JVM
+60.

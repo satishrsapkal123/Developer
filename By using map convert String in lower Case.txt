@@ -1,0 +1,14 @@
+// Convert String in LowerCase
+import java.util.*;
+import java.util.stream.*;
+class Test
+{
+    public static void main(String [] args)
+    {
+       
+            List<String> list = Arrays.asList("saw", "wrong turn", 
+                      "walking dead", "nun", "jurassic park");
+                     List<String> list2= list.stream().map(i->i.toLowerCase()).collect(Collectors.toList());
+                     System.out.println(list2);
+    }
+}

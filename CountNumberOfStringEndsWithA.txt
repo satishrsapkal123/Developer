@@ -1,0 +1,15 @@
+// Counting number of string ends with a
+import java.util.*;
+import java.util.stream.*;
+class Test
+{
+    public static void main(String [] args)
+    {
+        List<String>list=Arrays.asList("Saish","Sapkal","Rutuja","Gopal","Shrikrushna","Shrisha");
+       long list2= list.stream().filter(i->i.endsWith("a")).count();
+       System.out.println(list2);
+        
+       
+
+    }
+}

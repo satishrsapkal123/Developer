@@ -1,0 +1,14 @@
+ Convert String in UpperCase
+import java.util.;
+import java.util.stream.;
+class Test
+{
+    public static void main(String [] args)
+    {
+       
+            ListString list = Arrays.asList(saw, wrong turn, 
+                      walking dead, nun, jurassic park);
+                     ListString list2= list.stream().map(i-i.toUpperCase()).collect(Collectors.toList());
+                     System.out.println(list2);
+    }
+}

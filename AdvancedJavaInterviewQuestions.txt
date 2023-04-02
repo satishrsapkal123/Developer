@@ -1,0 +1,66 @@
+1 What is JSP?
+  Ans: JSP is a java server pages
+       it is used to create dyanamic web application
+       We can write the java code into the html pages with the use of JSP
+       It is mainly used to develop the presentation layer.
+
+2. Explain life cycle methods of JSP.
+    Ans:- first step is the translation phase where the jsp is converted into Servlet.
+          The JSP engines compiles the servlet into the executable bytecode format(.class).
+          The class is loaded into the web container to process the request.
+          Creating a servlet instance.
+          User-Request-Init Method invokd----database initilization
+          ->service method -> where request is processed and response is sent to the client.
+ 
+               void _jspService(HttpServletRequest req,HttpServletResponse resp)
+                {
+                               //business logic
+                                                     }
+          -->Destroy method is invoked only once to destroy the object and perform clean up activities
+               
+              
+3.Who is responsible for handle the request?
+ Ans:-The web container is responsible to handle the request
+
+4.How manyType of Jsp implicit object?
+   Ans:-      	1.out
+	      	2.request
+	      	3.response    
+		4.config
+		5.application
+		6.session
+		7.pageContext
+		8.page
+		9.exception
+
+
+5.		JDBC-Why?
+		Suppose I want to connect java program to the database then how can I do this?
+		By using JDBC, we can achieve this
+                JDBC stands for Java Database Connectivity. 
+		It is an API for the Java programming language. 
+
+
+6. To connect Java application with the MySQL database, 5 Steps?
+     	1.Driver class
+	2.Connection URL: 
+	3.Username: 
+	4.Password: 
+	5.Create a table -
+
+7.Hibernate-
+         Ans:-Hibernate frameworks is mediator through which java application is communicated with database. 
+              It is open source frameworks.
+              It is Object Relational Mapping (ORM) tool.
+
+   Why?
+       	1.It is open source frameworks.
+	2.Faster performance-
+          It uses cache concept hence the performance is fast.
+	3.Database independent query-
+          It generates the database independent query.
+	4.Automatic table creation-
+          It has facility to create the database tables automatically. There is no need to create the database tables manually.
+	5.Simplifies the complex join-
+          It is easy to fetch the data from multiple tables in hibernate framework.
+
